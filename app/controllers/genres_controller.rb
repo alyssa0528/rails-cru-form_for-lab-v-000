@@ -15,6 +15,9 @@ class GenresController < ApplicationController
     @genre = Genre.find(params[:id])
   end
 
+  def update 
+    @genre = Genre.create(post_params)
+  end 
   private
   def post_params
     params.require(:genre).permit(:name)
