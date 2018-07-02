@@ -12,6 +12,7 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.create(post_params)
+    redirect_to song_path(@song)
   end
 
   def edit
