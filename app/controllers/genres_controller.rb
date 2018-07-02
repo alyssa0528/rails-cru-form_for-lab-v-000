@@ -13,4 +13,8 @@ class GenresController < ApplicationController
 
   def edit
   end
+
+  private
+  def post_params 
+  end 
 end
