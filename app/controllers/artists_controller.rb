@@ -18,6 +18,6 @@ class ArtistsController < ApplicationController
   private
 
   def post_params
-    params.require(:artist).permit(:first_name, :last_name))
+    params.require(:artist).permit(:name, :bio))
   end
 end
