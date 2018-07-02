@@ -14,4 +14,9 @@ class ArtistsController < ApplicationController
 
   def edit
   end
+
+  private 
+
+  def post_params 
+  end 
 end
