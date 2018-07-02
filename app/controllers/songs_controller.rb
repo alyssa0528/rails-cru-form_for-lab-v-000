@@ -17,4 +17,9 @@ class SongsController < ApplicationController
   def edit
     @song = Song.find(params[:id])
   end
+
+  private
+  def post_params
+    params.require(:song).permit(:name, :artist_id, :genre_id)
+  end
 end
