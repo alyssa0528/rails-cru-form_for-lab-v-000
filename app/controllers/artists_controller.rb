@@ -4,7 +4,7 @@ class ArtistsController < ApplicationController
 
   def create
     binding.pry
-    @artist = Artist.create(params[:artist])
+    @artist = Artist.create(post_params)
     redirect_to artist_path(@artist)
   end
 
@@ -19,5 +19,5 @@ class ArtistsController < ApplicationController
 
   def post_params
     params.require(:artist).permit(:first_name, :last_name))
-  end 
+  end
 end
