@@ -1,6 +1,6 @@
 <%= form_for :song do |f| %>
   <%= f.text_field :name %>
-  <%= f.integer :artist_id %>
-  <%= f.integer :genre_id %>
+  <%= f.number_field :artist_id %>
+  <%= f.number_field :genre_id %>
   <%= f.submit 'Create Song' %>
 <% end %>
