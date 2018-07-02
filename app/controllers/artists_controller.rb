@@ -4,7 +4,8 @@ class ArtistsController < ApplicationController
 
   def create
     @artist = Artist.create(params[:artist])
-  end 
+    redirect_to artist_path(@artist)
+  end
 
   def show
     @artist = Artist.find(params[:id])
