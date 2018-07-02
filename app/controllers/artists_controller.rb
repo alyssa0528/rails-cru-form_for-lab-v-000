@@ -3,7 +3,6 @@ class ArtistsController < ApplicationController
   end
 
   def create
-    binding.pry
     @artist = Artist.create(post_params)
     redirect_to artist_path(@artist)
   end
