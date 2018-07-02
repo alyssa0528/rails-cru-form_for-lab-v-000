@@ -17,6 +17,7 @@ class ArtistsController < ApplicationController
 
   def update
     @artist = Artist.create(post_params)
+    redirect_to artist_path(@artist)
   end
 
   private
