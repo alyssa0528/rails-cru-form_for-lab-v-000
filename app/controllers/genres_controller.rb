@@ -1,4 +1,7 @@
 class GenresController < ApplicationController
-  def edit 
+  def new
   end 
+
+  def edit
+  end
 end
