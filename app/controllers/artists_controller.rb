@@ -15,8 +15,9 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
   end
 
-  def update 
-  end 
+  def update
+    @artist = Artist.create(post_params)
+  end
 
   private
 
