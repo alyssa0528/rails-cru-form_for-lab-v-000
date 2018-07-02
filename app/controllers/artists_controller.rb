@@ -1,4 +1,4 @@
 class ArtistsController < ApplicationController
-  def new 
+  def new
   end 
 end
